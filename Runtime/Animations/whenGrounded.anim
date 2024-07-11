@@ -33,10 +33,31 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Dynamic Floor/World Constraint Reset
-    classID: 1
-    script: {fileID: 0}
+    attribute: m_Enabled
+    path: Dynamic VRC Floor/VRC World Constraint/Container
+    classID: 114
+    script: {fileID: 575728033, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: cachedExecutionGroupIndex
+    path: Dynamic VRC Floor/VRC World Constraint/Container
+    classID: 114
+    script: {fileID: 575728033, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
     flags: 0
   m_PPtrCurves: []
   m_SampleRate: 60
@@ -47,10 +68,19 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 375166709
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
+      path: 2249818667
+      attribute: 3305885265
+      script: {fileID: 575728033, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+      typeID: 114
+      customType: 24
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 2249818667
+      attribute: 1070355625
+      script: {fileID: 575728033, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+      typeID: 114
       customType: 0
       isPPtrCurve: 0
       isIntCurve: 0
@@ -93,10 +123,31 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Dynamic Floor/World Constraint Reset
-    classID: 1
-    script: {fileID: 0}
+    attribute: m_Enabled
+    path: Dynamic VRC Floor/VRC World Constraint/Container
+    classID: 114
+    script: {fileID: 575728033, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: cachedExecutionGroupIndex
+    path: Dynamic VRC Floor/VRC World Constraint/Container
+    classID: 114
+    script: {fileID: 575728033, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
     flags: 0
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
