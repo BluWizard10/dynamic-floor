@@ -6,7 +6,7 @@ Using a VRC Constraint, it ensures that the attached PhysBone Collider (Plane) w
 
 ## REQUIREMENTS
 
-- Latest VRChat Avatars SDK `3.6.2-constraints.2` or newer.
+- Latest VRChat Avatars SDK `3.6.2-constraints.3` or newer.
 - [VRCFury](https://vrcfury.com/download) `1.980.0` or newer.
 
 ## INSTALL
