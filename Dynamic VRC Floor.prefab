@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4382807667676317556}
-  - component: {fileID: 2969901261439800194}
   - component: {fileID: 2107148209864023325}
+  - component: {fileID: 2969901261439800194}
+  - component: {fileID: 219602102287556022}
   m_Layer: 0
   m_Name: Dynamic VRC Floor
   m_TagString: Untagged
@@ -35,6 +36,88 @@ Transform:
   - {fileID: 8584524601778752307}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2107148209864023325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674631760316925359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.22f1
+  vrcfuryVersion: 1.991.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 5898780255874187335
+  references:
+    version: 2
+    RefIds:
+    - rid: 5898780255874187335
+      type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 3
+        name: Blu's Add-ons/Floor Collider
+        state:
+          actions:
+          - rid: 5898780255874187337
+        saved: 1
+        slider: 0
+        sliderInactiveAtZero: 0
+        securityEnabled: 0
+        defaultOn: 1
+        includeInRest: 0
+        exclusiveOffState: 0
+        enableExclusiveTag: 0
+        exclusiveTag: 
+        resetPhysbones: []
+        hasExitTime: 0
+        enableIcon: 1
+        icon:
+          version: 1
+          fileID: 0
+          guid: 
+          id: 61fd2eab37c466345b33d9f8aa64fb05|Packages/net.bluwizard.source/Runtime/Global
+            Menu Icons/Floor Collider.png
+          objRef: {fileID: 2800000, guid: 61fd2eab37c466345b33d9f8aa64fb05, type: 3}
+        enableDriveGlobalParam: 0
+        driveGlobalParam: 
+        separateLocal: 0
+        localState:
+          actions: []
+        hasTransition: 0
+        transitionStateIn:
+          actions: []
+        transitionStateOut:
+          actions: []
+        transitionTimeIn: 0
+        transitionTimeOut: 0
+        localTransitionStateIn:
+          actions: []
+        localTransitionStateOut:
+          actions: []
+        localTransitionTimeIn: 0
+        localTransitionTimeOut: 0
+        simpleOutTransition: 1
+        defaultSliderValue: 0
+        useGlobalParam: 1
+        globalParam: Blu/FloorCollider
+        holdButton: 0
+        invertRestLogic: 0
+    - rid: 5898780255874187337
+      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
+      data:
+        version: 1
+        desktopActive: 0
+        androidActive: 0
+        obj: {fileID: 3861393977774438356}
+        mode: 0
 --- !u!114 &2969901261439800194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,7 +187,7 @@ MonoBehaviour:
         removePrefixes: []
         addPrefix: 
         useSecurityForToggle: 0
---- !u!114 &2107148209864023325
+--- !u!114 &219602102287556022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,69 +206,22 @@ MonoBehaviour:
   config:
     features: []
   content:
-    rid: 5898780255874187335
+    rid: 5898780507642003459
   references:
     version: 2
     RefIds:
-    - rid: 5898780255874187335
-      type: {class: Toggle, ns: VF.Model.Feature, asm: VRCFury}
+    - rid: 5898780507642003459
+      type: {class: SetIcon, ns: VF.Model.Feature, asm: VRCFury}
       data:
-        version: 3
-        name: Blu's Add-ons/Floor Collider
-        state:
-          actions:
-          - rid: 5898780255874187337
-        saved: 1
-        slider: 0
-        sliderInactiveAtZero: 0
-        securityEnabled: 0
-        defaultOn: 1
-        includeInRest: 0
-        exclusiveOffState: 0
-        enableExclusiveTag: 0
-        exclusiveTag: 
-        resetPhysbones: []
-        hasExitTime: 0
-        enableIcon: 1
+        version: 1
+        path: Blu's Add-ons
         icon:
           version: 1
           fileID: 0
           guid: 
-          id: 005b46968b40bd24aaea7c4e1f53ec96|Packages/net.bluwizard.dynfloor/Runtime/Floor
-            Collider.png
-          objRef: {fileID: 2800000, guid: 005b46968b40bd24aaea7c4e1f53ec96, type: 3}
-        enableDriveGlobalParam: 0
-        driveGlobalParam: 
-        separateLocal: 0
-        localState:
-          actions: []
-        hasTransition: 0
-        transitionStateIn:
-          actions: []
-        transitionStateOut:
-          actions: []
-        transitionTimeIn: 0
-        transitionTimeOut: 0
-        localTransitionStateIn:
-          actions: []
-        localTransitionStateOut:
-          actions: []
-        localTransitionTimeIn: 0
-        localTransitionTimeOut: 0
-        simpleOutTransition: 1
-        defaultSliderValue: 0
-        useGlobalParam: 1
-        globalParam: Blu/FloorCollider
-        holdButton: 0
-        invertRestLogic: 0
-    - rid: 5898780255874187337
-      type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
-      data:
-        version: 1
-        desktopActive: 0
-        androidActive: 0
-        obj: {fileID: 3861393977774438356}
-        mode: 0
+          id: 5e860ae16982cdd4fa3425607bfc610f|Packages/net.bluwizard.source/Runtime/Global
+            Menu Icons/Blu Menu.png
+          objRef: {fileID: 2800000, guid: 5e860ae16982cdd4fa3425607bfc610f, type: 3}
 --- !u!1 &2520797471000979962
 GameObject:
   m_ObjectHideFlags: 0
