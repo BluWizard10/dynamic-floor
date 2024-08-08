@@ -1,3 +1,6 @@
+# v1.0.0-beta.1
+- RELEASE CANDIDATE.
+
 # v0.3.0-beta
 - Added Editor Script that will install the Prefab automatically.
   - Simply select your Avatar in the Scene, then activate the script from the Unity Menu via `Tools -> BluWizard LABS -> Add Dynamic Floor Collider to Avatar`.
