@@ -1,3 +1,6 @@
+# v1.0.0-beta.2
+- Changed location of Script in the Unity Menu Bar to be under it's own `BluWizard LABS` Menu instead.
+
 # v1.0.0-beta.1
 - RELEASE CANDIDATE.
 

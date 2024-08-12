@@ -7,7 +7,7 @@ public class AddDynamicFloorCollider : EditorWindow
     // Define the GUID of the prefab in the Packages directory
     private static string prefabGUID = "b4d62de2cf5a8c748a002e2409e9239a";
 
-    [MenuItem("Tools/BluWizard LABS/Add Dynamic Floor Collider to Avatar")]
+    [MenuItem("BluWizard LABS/Add Dynamic Floor Collider to Avatar")]
     public static void AddColliderToAvatarMenu()
     {
         AddColliderToAvatar();

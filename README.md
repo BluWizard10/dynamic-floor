@@ -6,7 +6,7 @@ Using a VRC Constraint, it ensures that the attached PhysBone Collider (Plane) w
 
 ## REQUIREMENTS
 
-- Latest VRChat Avatars SDK `3.6.2-constraints.3` or newer.
+- Latest VRChat Avatars SDK `3.7.0` or newer.
 - [VRCFury](https://vrcfury.com/download) `1.980.0` or newer.
 
 ## INSTALL
@@ -15,7 +15,7 @@ Using a VRC Constraint, it ensures that the attached PhysBone Collider (Plane) w
 2. [Add the VRCFury Repository](https://vrcfury.com/download), if you haven't already.
 3. Add the `BluWizard LABS - Dynamic VRC Floor Collider` Package to your project. It will automatically add the latest version of VRCFury for you as well, since it's a vpmDependency. If necessary, this will also force an upgrade of the SDK to the minimum required version for this system to work.
 4. Launch the Project. Then, select the Avatar in your Scene and do either of the following:
-   1. Click `Tools -> BluWizard LABS -> Add Dynamic Floor Collider to Avatar` from the Unity Menu Bar.
+   1. Click `BluWizard LABS -> Add Dynamic Floor Collider to Avatar` from the Unity Menu Bar.
    2. OR `Right-Click` on the Avatar in your Hierarchy and click `BluWizard LABS -> Add Dynamic Floor Collider to Avatar` from the context menu.
 5. The Prefab should be instantly added to your Avatar and will be pinged in the Editor for you to see where it is. A Debug Log message will also print into the Console indicating it was successfully added.
 6. If necessary, change the references for your existing Tail PhysBones, among others, to reference the `Floor` PhysBone Collider inside the Prefab. It's located at `Dynamic VRC Floor -> VRC World Constraint -> Container -> Floor` in the Hierarchy.
