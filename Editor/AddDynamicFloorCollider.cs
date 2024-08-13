@@ -59,7 +59,7 @@ public class AddDynamicFloorCollider : EditorWindow
         Undo.RegisterCreatedObjectUndo(instantiatedPrefab, "Add Floor Collider");
         EditorUtility.SetDirty(selectedObject);
 
-        Debug.Log("Successfully added Dynamic VRC Floor to your Avatar! Don't forget to re-assign your PhysBones, such as your Tail, to use the newly added Floor Collider instead.");
+        Debug.Log("[<color=#0092d9>BluWizard LABS</color>] Successfully added Dynamic VRC Floor to your Avatar! Don't forget to re-assign your PhysBones, such as your Tail, to use the newly added Floor Collider instead.");
 
         // Select the newly added Prefab in the Hierarchy
         Selection.activeObject = instantiatedPrefab;
