@@ -1,7 +1,7 @@
 {
   "name": "net.bluwizard.dynfloor",
   "displayName": "BluWizard LABS - Dynamic VRC Floor Collider",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "unity": "2022.3",
   "description": "Dynamically updating Floor Collider system that retains it's position on the Floor when you jump, allowing Tails of long length to look more natural. Uses the new VRC Constraints system.",
   "hideInEditor": false,
@@ -9,8 +9,7 @@
   "gitDependencies": {},
   "vpmDependencies": {
     "com.vrchat.avatars": "^3.7.0",
-    "com.vrcfury.vrcfury": "^1.980.0",
-    "net.bluwizard.source": "^1.20.0"
+    "com.vrcfury.vrcfury": "^1.980.0"
   },
   "author": {
     "name": "BluWizard",

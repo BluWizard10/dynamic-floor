@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.991.0
+  vrcfuryVersion: 1.1057.0
   somethingIsBroken: 0
   config:
     features: []
@@ -83,9 +83,9 @@ MonoBehaviour:
           version: 1
           fileID: 0
           guid: 
-          id: 61fd2eab37c466345b33d9f8aa64fb05|Packages/net.bluwizard.source/Runtime/Global
-            Menu Icons/Floor Collider.png
-          objRef: {fileID: 2800000, guid: 61fd2eab37c466345b33d9f8aa64fb05, type: 3}
+          id: 90a0a40cb6011bd43864effb4fc7491f|Packages/net.bluwizard.dynfloor/Runtime/Floor
+            Collider.png
+          objRef: {fileID: 2800000, guid: 90a0a40cb6011bd43864effb4fc7491f, type: 3}
         enableDriveGlobalParam: 0
         driveGlobalParam: 
         separateLocal: 0
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.991.0
+  vrcfuryVersion: 1.1057.0
   somethingIsBroken: 0
   config:
     features: []
@@ -165,6 +165,7 @@ MonoBehaviour:
         rootBindingsApplyToAvatar: 0
         rewriteBindings: []
         allowMissingAssets: 0
+        injectSpsDepthParam: 
         controller:
           version: 1
           fileID: 0
@@ -201,7 +202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.991.0
+  vrcfuryVersion: 1.1057.0
   somethingIsBroken: 0
   config:
     features: []
@@ -219,9 +220,9 @@ MonoBehaviour:
           version: 1
           fileID: 0
           guid: 
-          id: 5e860ae16982cdd4fa3425607bfc610f|Packages/net.bluwizard.source/Runtime/Global
-            Menu Icons/Blu Menu.png
-          objRef: {fileID: 2800000, guid: 5e860ae16982cdd4fa3425607bfc610f, type: 3}
+          id: 92a49cb8c374e1e46bec8896542ed2b0|Packages/net.bluwizard.dynfloor/Runtime/Blu
+            Menu.png
+          objRef: {fileID: 2800000, guid: 92a49cb8c374e1e46bec8896542ed2b0, type: 3}
 --- !u!1 &2520797471000979962
 GameObject:
   m_ObjectHideFlags: 0
