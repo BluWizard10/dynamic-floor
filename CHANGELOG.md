@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0]
+### Changes
+- Prefab is now self-contained. This should allow you to place the Prefab anywhere in an organized Empty GameObject hierarchy. That is, if you're an organized freak like me.
+- Animation files were updated.
+- Bumped minimum version requirement of `VRChat SDK - Avatars` to `3.7.5`.
+- Bumped minimum version requirement of `VRCFury` to `1.1155.0`.
+
 ## [1.1.0]
 ### Changes
 - Added `InStation` condition to Animator Controller. This should stop the Floor Collider from being frozen when entering a VRC Station or Seat.
