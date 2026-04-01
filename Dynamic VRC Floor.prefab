@@ -9,9 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4382807667676317556}
-  - component: {fileID: 2107148209864023325}
-  - component: {fileID: 2969901261439800194}
-  - component: {fileID: 219602102287556022}
   m_Layer: 0
   m_Name: Dynamic VRC Floor
   m_TagString: Untagged
@@ -32,17 +29,51 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 1324352386394295351}
-  - {fileID: 8584524601778752307}
+  - {fileID: 4710685234588643661}
+  - {fileID: 2983040718769654821}
+  - {fileID: 2142424692665507391}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2107148209864023325
+--- !u!1 &2715375384067916913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2142424692665507391}
+  - component: {fileID: 9095770352644620171}
+  - component: {fileID: 9064522523296572693}
+  m_Layer: 0
+  m_Name: Toggle [Delete me if not using]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2142424692665507391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2715375384067916913}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4382807667676317556}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9095770352644620171
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674631760316925359}
+  m_GameObject: {fileID: 2715375384067916913}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
@@ -50,7 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1057.0
+  vrcfuryVersion: 1.1296.0
   somethingIsBroken: 0
   config:
     features: []
@@ -110,21 +141,24 @@ MonoBehaviour:
         globalParam: Blu/FloorCollider
         holdButton: 0
         invertRestLogic: 0
+        expandIntoTransition: 1
     - rid: 5898780255874187337
       type: {class: ObjectToggleAction, ns: VF.Model.StateAction, asm: VRCFury}
       data:
         version: 1
         desktopActive: 0
         androidActive: 0
+        localOnly: 0
+        remoteOnly: 0
         obj: {fileID: 3861393977774438356}
         mode: 0
---- !u!114 &2969901261439800194
+--- !u!114 &9064522523296572693
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674631760316925359}
+  m_GameObject: {fileID: 2715375384067916913}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
@@ -132,77 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1057.0
-  somethingIsBroken: 0
-  config:
-    features: []
-  content:
-    rid: 5898780097844084757
-  references:
-    version: 2
-    RefIds:
-    - rid: 5898780097844084757
-      type: {class: FullController, ns: VF.Model.Feature, asm: VRCFury}
-      data:
-        version: 4
-        controllers:
-        - controller:
-            version: 1
-            fileID: 0
-            guid: 
-            id: 94d798d8514d49d4baccfd171fc62ef7|Packages/net.bluwizard.dynfloor/Runtime/Animations/Dynamic
-              VRC Floor Collider.controller
-            objRef: {fileID: 9100000, guid: 94d798d8514d49d4baccfd171fc62ef7, type: 2}
-          type: 5
-        menus: []
-        prms: []
-        smoothedPrms: []
-        globalParams: []
-        allNonsyncedAreGlobal: 0
-        ignoreSaved: 0
-        toggleParam: 
-        rootObjOverride: {fileID: 0}
-        rootBindingsApplyToAvatar: 0
-        rewriteBindings: []
-        allowMissingAssets: 0
-        injectSpsDepthParam: 
-        controller:
-          version: 1
-          fileID: 0
-          guid: 
-          id: 
-          objRef: {fileID: 0}
-        menu:
-          version: 1
-          fileID: 0
-          guid: 
-          id: 
-          objRef: {fileID: 0}
-        parameters:
-          version: 1
-          fileID: 0
-          guid: 
-          id: 
-          objRef: {fileID: 0}
-        submenu: 
-        removePrefixes: []
-        addPrefix: 
-        useSecurityForToggle: 0
---- !u!114 &219602102287556022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 674631760316925359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 3
-  unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1057.0
+  vrcfuryVersion: 1.1296.0
   somethingIsBroken: 0
   config:
     features: []
@@ -223,7 +187,7 @@ MonoBehaviour:
           id: 92a49cb8c374e1e46bec8896542ed2b0|Packages/net.bluwizard.dynfloor/Runtime/Blu
             Menu.png
           objRef: {fileID: 2800000, guid: 92a49cb8c374e1e46bec8896542ed2b0, type: 3}
---- !u!1 &2520797471000979962
+--- !u!1 &3551747349238663005
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,29 +195,53 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8584524601778752307}
+  - component: {fileID: 2983040718769654821}
+  - component: {fileID: 8923901518197147055}
   m_Layer: 0
-  m_Name: ResetAxis
+  m_Name: Hit Worlds Raycast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8584524601778752307
+--- !u!4 &2983040718769654821
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2520797471000979962}
+  m_GameObject: {fileID: 3551747349238663005}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4382807667676317556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8923901518197147055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3551747349238663005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1472509199, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDirection: {x: 0, y: -1, z: 0}
+  distance: 0
+  collisionMode: 0
+  customCollisionLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  resultTransform: {fileID: 4710685234588643661}
+  applyRotation: 0
+  alignmentAxis: {x: 0, y: 1, z: 0}
+  disableOnMiss: 1
+  positioningOnMiss: 2
 --- !u!1 &3861393977774438356
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,12 +267,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3861393977774438356}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 7839498836791935928}
+  m_Father: {fileID: 4382807667676317556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4516846129511592649
 MonoBehaviour:
@@ -306,323 +294,4 @@ MonoBehaviour:
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
   bonesAsSpheres: 0
---- !u!1 &6953740992179409620
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1324352386394295351}
-  - component: {fileID: 6919064924594602233}
-  m_Layer: 0
-  m_Name: VRC World Constraint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1324352386394295351
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6953740992179409620}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 7839498836791935928}
-  m_Father: {fileID: 4382807667676317556}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6919064924594602233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6953740992179409620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 575728033, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsActive: 1
-  GlobalWeight: 1
-  TargetTransform: {fileID: 0}
-  SolveInLocalSpace: 0
-  FreezeToWorld: 1
-  RebakeOffsetsWhenUnfrozen: 0
-  Locked: 1
-  Sources:
-    source0:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source1:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source2:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source3:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source4:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source5:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source6:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source7:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source8:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source9:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source10:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source11:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source12:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source13:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source14:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source15:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    totalLength: 0
-    overflowList: []
-  cachedExecutionGroupIndex: 0
-  PositionAtRest: {x: 0, y: 0, z: 0}
-  AffectsPositionX: 0
-  AffectsPositionY: 1
-  AffectsPositionZ: 0
-  RotationAtRest: {x: 0, y: 0, z: 0}
-  AffectsRotationX: 1
-  AffectsRotationY: 1
-  AffectsRotationZ: 1
---- !u!1 &8212481813895108380
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7839498836791935928}
-  - component: {fileID: 8678811090789687846}
-  m_Layer: 0
-  m_Name: Container
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7839498836791935928
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8212481813895108380}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 4710685234588643661}
-  m_Father: {fileID: 1324352386394295351}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8678811090789687846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8212481813895108380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 575728033, guid: 58e2f01a24261a14cb82e6d3399e8b16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsActive: 1
-  GlobalWeight: 1
-  TargetTransform: {fileID: 0}
-  SolveInLocalSpace: 0
-  FreezeToWorld: 0
-  RebakeOffsetsWhenUnfrozen: 0
-  Locked: 1
-  Sources:
-    source0:
-      SourceTransform: {fileID: 8584524601778752307}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source1:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source2:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source3:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source4:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source5:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source6:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source7:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source8:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source9:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source10:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source11:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source12:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source13:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source14:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    source15:
-      SourceTransform: {fileID: 0}
-      Weight: 1
-      ParentPositionOffset: {x: 0, y: 0, z: 0}
-      ParentRotationOffset: {x: 0, y: 0, z: 0}
-      _defaultsApplied: 1
-    totalLength: 1
-    overflowList: []
-  cachedExecutionGroupIndex: 1
-  PositionAtRest: {x: 0, y: 0, z: 0}
-  AffectsPositionX: 1
-  AffectsPositionY: 1
-  AffectsPositionZ: 1
-  RotationAtRest: {x: -0, y: 0, z: 0}
-  AffectsRotationX: 1
-  AffectsRotationY: 1
-  AffectsRotationZ: 1
+  globalCollisionFlags: 0
