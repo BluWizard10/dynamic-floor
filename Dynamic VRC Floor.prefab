@@ -81,7 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1296.0
+  vrcfuryVersion: 1.1298.0
   somethingIsBroken: 0
   config:
     features: []
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1296.0
+  vrcfuryVersion: 1.1298.0
   somethingIsBroken: 0
   config:
     features: []
@@ -232,16 +232,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raycastDirection: {x: 0, y: -1, z: 0}
-  distance: 0
+  distance: 10
+  applyTransformScale: 0
   collisionMode: 0
   customCollisionLayers:
     serializedVersion: 2
     m_Bits: 0
   resultTransform: {fileID: 4710685234588643661}
-  applyRotation: 0
+  applyRotation: 1
   alignmentAxis: {x: 0, y: 1, z: 0}
-  disableOnMiss: 1
-  positioningOnMiss: 2
+  behaviorOnMiss: 0
+  parameter: Floor
+  param_HitValue: 0
+  param_RatioValue: 0
+  param_DistanceValue: 0
 --- !u!1 &3861393977774438356
 GameObject:
   m_ObjectHideFlags: 0
